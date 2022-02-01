@@ -47,19 +47,10 @@ int main(void)
     MX_USB_HOST_Process();
 
     //Pin isimlerini pinout view ekranından öğrendik.
-	HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);//yeşil led yandı
-    HAL_Delay(250);
-    HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);//turuncu led yandı
-    HAL_Delay(250);
-    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);//kırmızı led yandı
-    HAL_Delay(250);
 
-    HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);//yeşil led söndü
-    HAL_Delay(250);
-    HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);//turuncu led söndü
-    HAL_Delay(250);
-    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);//kırmızı led söndü
-    HAL_Delay(250);
+	HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);//yeşil led yandı
+    HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);//turuncu led yandı
+    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);//kırmızı led yandı
 
 
     //buton pininin durumunu tempButtonState değişkenine atadık.
